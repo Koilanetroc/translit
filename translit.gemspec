@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = %q{2010-09-28}
   s.description = %q{Transliteration between cyrillic <-> latin | Транслитерация между кириллицей и латиницей }
   s.email = %q{tjbladez@gmail.com}
-  s.files = FileList['{bin,lib}/**/*', 'README.markdown'].to_a
+  s.files = `git ls-files -z`.split("\x0")
   s.has_rdoc = false
   s.bindir = 'bin'
   s.executables = %w{translit}
